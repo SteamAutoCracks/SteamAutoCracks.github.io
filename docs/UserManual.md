@@ -31,18 +31,20 @@ description: SteamAutoCrack User Manual
 ### Generator API
 
 * Generate game info with different info APIs.
-* SteamKit2 Client: Use SteamKit2 Client for generating most of the info and Steam Web API/Xan105 API for game schema. (Best result)
-* Steam Web API: Steam Web API/Xan105 API for all game info. (Faster but less info)
+* SteamKit2 Client: Use SteamKit2 Client for generating most of the info and Steam Web API API for game schema. (Best result)
+* Steam Web API: Steam Web API API for all game info. (Faster but less info)
 * Offline: Generate offline basic info without Internet.
 
-### Use Xan105 API
+### Steam Web API Key / Steam Web API Access Token
 
-* Use Xan105 API to replace Steam Web API, but can't generate stats. (Currently not working)
-
-### Steam Web API Key
-
-* Your Steam Web API Key.
-* If it's missing without using Xan105 API, game schema (achievements and stats) will not be generated.
+* Your Steam Web API Key or Steam Web API Access Token.
+* You have to choose one of them to generate game info completely
+* Get a Steam Web API Key require a Steam account with 5$ spent on Steam, but you can get a Steam Web API Access Token without it.
+* You can get your Steam Web API Key from [Steam Web API Key](https://steamcommunity.com/dev/apikey).
+* You can get your Steam Web API Access Token for following steps:
+  1. Login into [Steam](https://store.steampowered.com) in your browser.
+  2. Access [https://store.steampowered.com/pointssummary/ajaxgetasyncconfig](https://store.steampowered.com/pointssummary/ajaxgetasyncconfig) on your browser.
+  3. Response will like this `{"success":1,"data":{"webapi_token":"eyAidHlxxxxx"}}`, the value of `webapi_token` is your Steam Web API Access Token (The `eyAidHlxxxxx` field).
 
 ### Use Steam Web App List
 
@@ -92,6 +94,10 @@ description: SteamAutoCrack User Manual
 ### Custom Broadcast IP
 
 * Set custom IPs (or domains) which the emulator will send broadcast packets to.
+
+### Ticket
+
+* Set the Encrypted App Ticket for the game.
 
 ### Open Example Config
 

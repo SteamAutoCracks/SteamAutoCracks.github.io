@@ -15,7 +15,7 @@ description: SteamAutoCrack Config.json Configuration Introduction
 ```json
 {
   "EMUApplyConfigs": {
-    "LocalSave": "steam_settings",
+    "LocalSave": "steam_settings\\saves",
     "UseLocalSave": false,
     "UseGoldbergExperimental": false,
     "GenerateInterfacesFile": false,
@@ -28,6 +28,7 @@ description: SteamAutoCrack Config.json Configuration Introduction
     "ListenPort": "47584",
     "CustomIP": "127.0.0.1",
     "UseCustomIP": false,
+    "Ticket": "",
     "DisableNetworking": false,
     "Offline": false,
     "EnableOverlay": false
@@ -44,9 +45,9 @@ description: SteamAutoCrack Config.json Configuration Introduction
   },
   "EMUGameInfoConfigs": {
     "GameInfoAPI": 0,
+    "SteamWebAPIKeyType": 0,
     "SteamWebAPIKey": "",
     "GenerateImages": true,
-    "UseXan105API": false,
     "UseSteamWebAppList": false
   },
   "GenCrackOnlyConfigs": {
@@ -102,6 +103,7 @@ AccountName | String   | `Account Name`
 ListenPort       | String   | `Listen Port`
 CustomIP     | String   | `Custom Broadcast IP`
 UseCustomIP| Boolean| Enable `Custom Broadcast IP`
+Ticket| String| `Steam Encrypted App Ticket`
 DisableNetworking|Boolean| `Disable Networking`
 Offline|Boolean| `Offline mode`
 EnableOverlay|Boolean| `Enable Overlay`
@@ -125,9 +127,9 @@ SteamAPICheckBypassNthTime|Int64| The List of Nth Time when use `Enable Only Nth
 Key            | Type           | Description
 -------------- | -------------- | --------------
 GameInfoAPI|Number(Enum)| `Generator API` 0-2 in following order: `"SteamKit2 Client,Steam Web API,Offline"`
-SteamWebAPIKey|String| `Steam Web API Key`
+SteamWebAPIKeyType|Number(Enum)| `Steam Web API Key Type` 0-1 in following order: `"Steam Web API Key,Steam Web API Access Token"`
+SteamWebAPIKey|String| `Steam Web API Key or Steam Web API Access Token`
 GenerateImages|Boolean| `Generate Achievement Images`
-UseXan105API|Boolean| `Use Xan105 API`
 UseSteamWebAppList|Boolean| `Use Steam Web App List`
 
 ### GenCrackOnlyConfigs
