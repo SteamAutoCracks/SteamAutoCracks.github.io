@@ -45,3 +45,6 @@ description: Frequently Asked Questions
 
 > * **Q5: Unable to get the achievement data for Goldberg Emulator.**  
 > * **A5:** Please fill your Steam Web API Key or Steam Web API Access Token.
+
+> * **Q6: I got 403 error when updating Goldberg Steam Emulator.**
+> * **A6:** Fill your `GitHub Token` in the field "GithubToken" to the configuration file `config.json`.

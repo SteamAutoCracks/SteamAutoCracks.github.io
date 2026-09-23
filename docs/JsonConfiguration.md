@@ -64,7 +64,8 @@ description: SteamAutoCrack Config.json Configuration Introduction
     "Restore": false
   },
   "EnableDebugLog": false,
-  "LogToFile": false
+  "LogToFile": false,
+  "GitHubToken": "<Your Github Token>"
 }
 ```
 
@@ -82,6 +83,7 @@ GenCrackOnlyConfigs      | Object  | `Generate Crack Only Files`
 ProcessConfigs           | Object  | Select processes to process
 EnableDebugLog           | Boolean | Output debug log as log.log (GUI Only)
 LogToFile                | Boolean | Output log to file (GUI Only)
+GitHubToken              | String  | `GitHub Token` for updating Goldberg Steam Emulator
 
 ### EMUApplyConfigs
 
